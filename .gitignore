@@ -1,0 +1,24 @@
+# Ignore all node_modules directories, even in nested paths
+**/node_modules/
+
+# Ignore all build directories, even in nested paths
+**/build/
+
+# Ignore all dist directories, even in nested paths
+**/dist/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+

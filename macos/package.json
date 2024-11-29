@@ -1,0 +1,23 @@
+{
+  "name": "servo-controller-macos",
+  "version": "1.0.0",
+  "description": "servo controller Electron app for mac os",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "build": "cd ../web && npm run build && cd ../macos && rm -rf ./builder && rm -rf ./dist && mkdir -p ./builder && cp -a ../web/build/ ./builder && electron-builder",
+    "build-win64": "cd ../web && npm run build && cd ../macos && rm -rf ./builder && rm -rf ./dist && mkdir -p ./builder && cp -a ../web/build/ ./builder-win && electron-builder --win --x64",
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "author": "Chaitanya Guttikar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-is-dev": "^3.0.1"
+  }
+}
